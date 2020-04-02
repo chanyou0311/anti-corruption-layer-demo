@@ -9,8 +9,27 @@ pipenv install
 pipenv run src/main.py
 ```
 
-```
+## sample request and response
+
+### request
+
+```sh
 curl http://127.0.0.1:5042/forecast/340010
+```
+
+### response
+
+```json
+{
+  "today": {
+    "max_temperature": "16",
+    "min_temperature": "7",
+    "telop": "晴時々曇"
+  },
+  "tomorrow": null,
+  "prefecture": "広島県",
+  "city": "広島"
+}
 ```
 
 ## 解説
